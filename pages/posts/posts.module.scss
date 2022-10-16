@@ -1,0 +1,38 @@
+.list {
+  padding: 30px;
+
+  table {
+    border-top: 2px solid rgb(185, 185, 185);
+    width: 100%;
+    border-collapse: collapse;
+  }
+
+  thead {
+    tr {
+      td {
+        border-bottom-width: 2px;
+      }
+    }
+  }
+
+  td, th {
+    height: 50px;
+    border-bottom: 1px solid rgb(185, 185, 185);
+  }
+}
+
+.page {
+  margin-top: 50px;
+  display: flex;
+  justify-content: center;
+
+  .link {
+    display: block;
+    position: absolute;
+    right: 30px;
+    padding: 5px 10px;
+    background-color: rgb(108, 157, 197);
+    border-radius: 10px;
+    color: #fff;
+  }
+}

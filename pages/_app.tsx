@@ -2,6 +2,7 @@ import React from 'react'
 import { QueryClientProvider, QueryClient, Hydrate, DehydratedState } from '@tanstack/react-query'
 import { NextComponentType } from 'next'
 import { AppContext, AppInitialProps, AppProps } from 'next/app'
+import CssBaseline from "@mui/material/CssBaseline";
 import '../styles/globals.css'
 
 interface PageProps {
@@ -24,6 +25,7 @@ const MyApp: NextComponentType<AppContext, AppInitialProps, AppProps<PageProps>>
   return (
     <QueryClientProvider client={queryClient}>
       <Hydrate state={pageProps.dehydratedState}>
+        <CssBaseline />
         <Component {...pageProps} />      
       </Hydrate>
     </QueryClientProvider>

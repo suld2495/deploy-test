@@ -11,9 +11,12 @@ export interface Post {
 export const getPosts = async (page: number = 1): Promise<{ posts: Post[], total: number }> => {
   try {
     const response = await axios.get(`${server}/api/posts/${page}`);
-    console.log(response.headers.get);
     return response.data;
   } catch {
     throw new Error();
   }
 };
+
+export const svaePost = async (form: Omit<Post, 'id'>) => {
+  await axios.put(`${server}/api/post`, form);
+}
