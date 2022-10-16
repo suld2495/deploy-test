@@ -27,6 +27,7 @@ const Home: NextPage<Props> = ({ posts, total }) => {
 
   return (
     <div className={styles.list}>
+      <Link href="/">메인으로 가기</Link>
       <h1>게시글 리스트</h1>
       <table>
         <thead>

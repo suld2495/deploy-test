@@ -9,10 +9,12 @@ import cate06 from '../../public/main/cate06.png'
 import img01 from '../../public/main/img01.png'
 import icon00 from '../../public/main/icon00.png'
 import line from '../../public/main/line.png'
+import Link from "next/link";
 
 const Intro: NextPage = () => {
   return (
     <div>
+      <Link href="/">메인으로 가기</Link>
       <div className="section2 content">
             <div className="container">
                 <div className="row">
